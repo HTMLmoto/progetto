@@ -1,1 +1,2 @@
-# Progetto sito terremoti dell'ITT Allievi Sangallo di Terni
+# ITT "Sangallo Allievi" - Terni
+## Progetto sito terremoti dell'ITT di Terni
