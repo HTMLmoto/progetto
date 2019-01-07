@@ -3,3 +3,6 @@ body {
     padding: 0;
     cursor: default;
 }
+#pon {
+    object-fit: contain;
+}
