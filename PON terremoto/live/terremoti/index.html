@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Titolo sito PON</title>
+        <script src="../../Libs/js/jquery-2.2.3.js"></script>
+        <script src="../../Libs/js/popper.js"></script>
+        <script src="../../Libs/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../../Libs/css/css/font-awesome.css">
+        <link rel="stylesheet" href="../../Libs/css/bootstrap.css">
+        <link rel="stylesheet" href="../../Libs/graphics.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                ITT terremoti
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <form class="form-inline my-2">
+                    <div class="input-group btn-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div align="center">
+            <br>
+            <div class="btn-group">
+                <a href="#" class="btn btn-danger disabled"><i class="fa fa-play"></i> Live terremoti</a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
+            </div>
+        </div>
+        <br>
+        <iframe class="live" src="http://cnt.rm.ingv.it">
+        </iframe>
+    </body>
+</html>

@@ -1,12 +1,12 @@
 <html>
     <head>
         <title>Titolo sito PON</title>
-        <script src="../Libs/js/jquery-2.2.3.js"></script>
-        <script src="../Libs/js/popper.js"></script>
-        <script src="../Libs/js/bootstrap.js"></script>
-        <link rel="stylesheet" href="../Libs/css/css/font-awesome.css">
-        <link rel="stylesheet" href="../Libs/css/bootstrap.css">
-        <link rel="stylesheet" href="../Libs/graphics.css">
+        <script src="../../Libs/js/jquery-2.2.3.js"></script>
+        <script src="../../Libs/js/popper.js"></script>
+        <script src="../../Libs/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../../Libs/css/css/font-awesome.css">
+        <link rel="stylesheet" href="../../Libs/css/bootstrap.css">
+        <link rel="stylesheet" href="../../Libs/graphics.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -19,6 +19,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
                 <form class="form-inline my-2">
                     <div class="input-group btn-group">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -32,35 +34,11 @@
             <br>
             <div class="btn-group">
                 <a href="#" class="btn btn-danger"><i class="fa fa-play"></i> Live terremoti</a>
-                <a href="#" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
-            </div>
-            <br>
-            <br>
-        </div>
-        <hr>
-        <div class="container">
-            <!-- post qui -->
-            <div class="alert alert-secondary" align="center">
-                <h3>Titolo del post</h3>
-                <hr>
-                <p><i class="fa fa-calendar"></i> 00/00/0000 | <i class="fa fa-clock-o"></i> 00:00</p>
-                <p>Contenuto</p>
+                <a href="#" class="btn btn-danger disabled"><i class="fa fa-play"></i> Live faglie</a>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                Le nostre pagine
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <img id="pon" src="img/banner_PON_14_20.jpg" width="100%" height="200">
-            </div>
-        </div>
+        <br>
+        <iframe class="live" src="http://diss.rm.ingv.it/dissGM/">
+        </iframe>
     </body>
 </html>
