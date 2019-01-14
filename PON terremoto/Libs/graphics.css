@@ -9,6 +9,16 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100px;
+    height: 300px;
+    
+}
+.voce-menu {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     margin-top: 60;
 }
 
@@ -47,4 +57,14 @@ body {
 }
 .post_testo {
     font-size: 16pt;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.post_container{
+    float: left;
+    width: 100%;
 }
