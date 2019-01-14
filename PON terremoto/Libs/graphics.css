@@ -5,6 +5,12 @@ body {
 }
 
 #menu-container{
+    position: fixed
+    top:0 
+    left:0
+        z-index: 1
+        
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -27,8 +33,24 @@ body {
     object-fit: contain;
 }
 
+<<<<<<< HEAD
+
+.post_testo {
+    margin-left: 20px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.post_container{
+    float: left;
+    width: 100%;
+=======
 .live {
     width: 100vw;
     height: calc(100vh - 156px);
     border: none;
+>>>>>>> 083fc267ed0cbb6c63e3376c12d8d77af39b098a
 }
