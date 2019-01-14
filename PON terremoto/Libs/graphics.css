@@ -17,3 +17,17 @@ body {
     object-fit: contain;
 }
 
+
+.post_testo {
+    margin-left: 20px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.post_container{
+    float: left;
+    width: 100%;
+}
