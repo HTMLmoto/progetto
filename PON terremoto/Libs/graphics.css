@@ -5,10 +5,11 @@ body {
 }
 
 #menu-container{
-    position: fixed
-    top:0
-    left:0
-        z-index: 1
+    position: fixed;
+    top:0;
+    left:0;
+        z-index: 1;
+    margin-top: 60;
         
     
 }
@@ -17,11 +18,13 @@ body {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 45px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+    margin-top: auto;
+    font-style: oblique;
 }
 
 
