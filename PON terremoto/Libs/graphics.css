@@ -29,6 +29,6 @@ body {
 
 .live {
     width: 100vw;
-    height: 300;
+    height: calc(100vh - 156px);
     border: none;
 }
