@@ -1,0 +1,58 @@
+/* inclusione font */
+    @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+   	/* sfondo di ogni pagina */
+	body{
+    	background-color: #effdfd;
+    }
+    
+    /* sfondo contenitore sito */
+    #sfondoTitolo{
+    	background-color: #ffc3c2;
+        margin: 0;
+        border: 2px solid #000000;
+    }
+    
+    /* menu head del sito */
+    .titoloSito{
+   		color: #f1110f;
+        font-family: 'Oswald';
+        text-align: center;
+    }
+    
+    /* bottone menu collapse */
+    div#menuCollapse{
+        width: 40px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    
+    /* modulo ricerca sito */
+    #moduloRicerca{
+    	background-color: #ffffff;
+    }
+    
+    /* voci sidebar */
+    .voceSidebar{
+    	background-color: #fffaf0;
+        border: 2px solid #000000;
+        margin-bottom: 3px;
+        padding: 7px 10px;
+        font-family: 'Oswald';
+        font-size: 120%;
+        -webkit-transition: background-color 0.5s;
+    	transition: background-color 0.5s;
+        user-select: none;
+        cursor: pointer;
+    }
+    
+    /* voci sidebar hover */
+    .voceSidebar:hover{
+      	background-color: #ffce97;
+    }
+    
+    /* voci sidebar active */
+    .voceSidebar:active{
+      	font-weight: bold;
+    }
