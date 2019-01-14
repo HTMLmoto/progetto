@@ -3,7 +3,7 @@ body {
     padding: 0;
     cursor: default;
 }
-<<<<<<< HEAD
+
 #menu-container{
     position: fixed
     top:0 
@@ -12,8 +12,8 @@ body {
         
     
 }
-=======
+
 #pon {
     object-fit: contain;
 }
->>>>>>> 6a93b3af5f0ef7e61e605712f94a6962ddfc824e
+
