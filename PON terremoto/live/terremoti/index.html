@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Titolo sito PON</title>
+        <!-- Librerie -->
         <script src="../../Libs/js/jquery-2.2.3.js"></script>
         <script src="../../Libs/js/popper.js"></script>
         <script src="../../Libs/js/bootstrap.js"></script>
@@ -10,7 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <!--NavBar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <!--Logo-->
             <a class="navbar-brand" href="#">
                 <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 ITT terremoti
@@ -21,6 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 </ul>
+                <!--BarraRicerca-->
                 <form class="form-inline my-2">
                     <div class="input-group btn-group">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -29,15 +33,16 @@
                 </form>
             </div>
         </nav>
-
+        <!--ToolBar-->
         <div align="center">
             <br>
             <div class="btn-group">
-                <a href="#" class="btn btn-danger disabled"><i class="fa fa-play"></i> Live terremoti</a>
-                <a href="#" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
+                <a href="#" class="btn btn-danger disabled text-light"><i class="fa fa-play"></i> Live terremoti</a>
+                <a href="../faglie/" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
             </div>
         </div>
         <br>
+        <!--ContenutoLive-->
         <iframe class="live" src="http://cnt.rm.ingv.it">
         </iframe>
     </body>
