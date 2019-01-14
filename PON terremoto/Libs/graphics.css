@@ -11,12 +11,29 @@ body {
         z-index: 1
         
     
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bottone {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-top: 10;
 }
 
 #pon {
     object-fit: contain;
 }
 
+<<<<<<< HEAD
 
 .post_testo {
     margin-left: 20px;
@@ -30,4 +47,10 @@ body {
 .post_container{
     float: left;
     width: 100%;
+=======
+.live {
+    width: 100vw;
+    height: calc(100vh - 156px);
+    border: none;
+>>>>>>> 083fc267ed0cbb6c63e3376c12d8d77af39b098a
 }
