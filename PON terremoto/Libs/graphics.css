@@ -6,12 +6,24 @@ body {
 
 #menu-container{
     position: fixed
-    top:0 
+    top:0
     left:0
         z-index: 1
         
     
 }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 
 #pon {
     object-fit: contain;
