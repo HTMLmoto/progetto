@@ -54,6 +54,19 @@ body {
         
 }
 
+.footer hr {
+    border-color: grey;
+}
+
+.footer a {
+    list-style-type: none;
+    color: #7dc3ff;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
 #pon {
     object-fit: contain;
 }
