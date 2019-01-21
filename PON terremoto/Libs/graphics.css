@@ -17,7 +17,18 @@ body {
 
 
 .voce-menu {
-    padding: 20px;
+    background-color: lightblue;
+  border: none;
+  color: black;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: auto; 
+  font-style: oblique;
+    width: 240px;
+    height: 40px;
 }
 
 .button {
