@@ -6,43 +6,36 @@ body {
 
 #menu-container{
     position: fixed;
-<<<<<<< HEAD
     top:0;
     left:0;
     width: 100px;
     height: 300px;
-=======
->>>>>>> 7af989372ef159b7ea86bb1c4beef5ca196af804
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100px;
-    height: 300px;
+    margin-top: 70;
     
 }
-<<<<<<< HEAD
-.voce-menu{
+e-menu{
     
         padding: 20px;
     }
     position: fixed;
     top:0;
     left:0;
-=======
->>>>>>> 7af989372ef159b7ea86bb1c4beef5ca196af804
+
 .voce-menu {
     padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    margin-top: 60;
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: lightblue;
   border: none;
-  color: white;
+  color: black;
   padding: 10px 45px;
   text-align: center;
   text-decoration: none;
@@ -50,6 +43,9 @@ body {
   font-size: 16px;
   margin-top: auto; 
   font-style: oblique;
+    width: 240px;
+    height: 40px;
+    
 }
 
 #pon {
