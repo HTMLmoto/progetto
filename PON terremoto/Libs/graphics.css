@@ -10,7 +10,11 @@ body {
     left:0;
     width: 100px;
     height: 300px;
+    top: 0;
+    left: 0;
     z-index: 1;
+    width: 100px;
+    height: 300px;
     
 }
 .voce-menu{
@@ -20,10 +24,13 @@ body {
     position: fixed;
     top:0;
     left:0;
+.voce-menu {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
     margin-top: 60;
-        
-    
 }
 
 .button {
@@ -39,26 +46,25 @@ body {
   font-style: oblique;
 }
 
-
 #pon {
     object-fit: contain;
 }
 
-.post_testo {
-    margin-left: 20px;
-}
-
-.img {
-    width: 200px;
-    height: 200px;
-    float: right;
-}
-.post_container{
-    float: left;
-    width: 100%;
-}
-.live{
+.live {
     width: 100vw;
     height: calc(100vh - 156px);
     border: none;
+}
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.post img {
+    width: 100%;
+    height: 300;
+    object-fit: contain;
+}
+.post_testo {
+    font-size: 16pt;
 }
