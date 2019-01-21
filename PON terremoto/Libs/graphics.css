@@ -6,8 +6,6 @@ body {
 
 #menu-container{
     position: fixed;
-    top:0;
-    left:0;
     width: 200px;
     height: 300px;
     top: 0;
@@ -16,20 +14,10 @@ body {
     margin-top: 70;
     background-color: red;
 }
-e-menu{
-    
-        padding: 20px;
-    }
-    position: fixed;
-    top:0;
-    left:0;
+
 
 .voce-menu {
     padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 .button {
