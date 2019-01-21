@@ -8,13 +8,13 @@ body {
     position: fixed;
     top:0;
     left:0;
-    width: 100px;
+    width: 200px;
     height: 300px;
     top: 0;
     left: 0;
     z-index: 1;
     margin-top: 70;
-    
+    background-color: red;
 }
 e-menu{
     
@@ -74,3 +74,7 @@ e-menu{
 .post_testo {
     font-size: 16pt;
 }
+
+/*barra laterale*/
+
+/*fine*/
