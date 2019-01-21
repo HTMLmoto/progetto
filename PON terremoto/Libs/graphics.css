@@ -6,10 +6,13 @@ body {
 
 #menu-container{
     position: fixed;
+<<<<<<< HEAD
     top:0;
     left:0;
     width: 100px;
     height: 300px;
+=======
+>>>>>>> 7af989372ef159b7ea86bb1c4beef5ca196af804
     top: 0;
     left: 0;
     z-index: 1;
@@ -17,6 +20,7 @@ body {
     height: 300px;
     
 }
+<<<<<<< HEAD
 .voce-menu{
     
         padding: 20px;
@@ -24,6 +28,8 @@ body {
     position: fixed;
     top:0;
     left:0;
+=======
+>>>>>>> 7af989372ef159b7ea86bb1c4beef5ca196af804
 .voce-menu {
     padding: 20px;
     position: fixed;
