@@ -45,7 +45,7 @@ body {
     height: 40px;
 }
 
-.button {
+/*.button {
   background-color: lightblue;
   border: none;
   color: black;
@@ -59,11 +59,7 @@ body {
     width: 240px;
     height: 40px;
     
-}
-
-    .hr-menu {
-        
-}
+}*/
 
 .footer hr {
     border-color: grey;
