@@ -94,12 +94,26 @@ body {
     height: 300;
     object-fit: contain;
 }
-.post_testo {
-    font-size: 16pt;
-}
 
 /*distanza bottoni barra in altro*/
-.padding{
-    padding: 0px 5px;
+a.nav-link {
+    padding: 0px 5px !important;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.homepageCarousel {
+    padding: 0px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 2px;
+}
+/*barra laterale*/
+
 /*fine*/
