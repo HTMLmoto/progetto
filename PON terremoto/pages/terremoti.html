@@ -1,57 +1,26 @@
 <html>
     <head>
-        <title>Titolo sito PON</title>
-        <script src="Libs/js/jquery-2.2.3.js"></script>
-        <script src="Libs/js/popper.js"></script>
-        <script src="Libs/js/bootstrap.js"></script>
-        <link rel="stylesheet" href="Libs/css/css/font-awesome.css">
-        <link rel="stylesheet" href="Libs/css/bootstrap.css">
-        <link rel="stylesheet" href="Libs/graphics.css">
+        <title>Titolo della sotto pagina</title>
+        <script src="../Libs/js/jquery-2.2.3.js"></script>
+        <script src="../Libs/js/popper.js"></script>
+        <script src="../Libs/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../Libs/css/css/font-awesome.css">
+        <link rel="stylesheet" href="../Libs/css/bootstrap.css">
+        <link rel="stylesheet" href="../Libs/graphics.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            $(document).ready(function() {
-                $('.carousel').carousel({
-                  interval: 4000
-                });
-            });
-        </script>
     </head>
     <body>
         <div class="background"></div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../">
                 <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 ITT terremoti
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item padding">
-                        <a class="nav-link padding" href="#" >Terremoti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link padding" href="#">Zone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link padding" href="#">Stumenti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link padding" href="#">Cosa fare/Sicurezza</a>
-                    </li>
-                   
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>-->
                 </ul>
                 <form class="form-inline my-2">
                     <div class="input-group btn-group">
@@ -61,19 +30,40 @@
                 </form>
             </div>
         </nav>
-                
-
-       
-        
+        <!--1Tt37N1,T37r3M0_t1.108%-->
+        <div align="center">
+            <br>
+            <div class="btn-group">
+                <a href="../live/terremoti/" class="btn btn-danger"><i class="fa fa-play"></i> Live terremoti</a>
+                <a href="../live/faglie/" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
+            </div>
+            <br>
+            <br>
+        </div>
+        <hr>
+        <div class="container">
+            <!-- post qui -->
+            <div class="post" align="center">
+                <h1>Titolo della pagina</h1>
+                <hr>
+                <div class="post_container">
+                    <img src="#" class="img">
+                    <br><br>
+                    <p class="post_testo">
+                        Contenuto del post
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="row bg-dark text-light footer">
             <div class="col-md-6">
                 <hr>
                 Le nostre pagine
                 <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
+                    <li><a class="nav-link padding" href="#" >Terremoti</a></li>
+                    <li><a class="nav-link padding" href="#">Zone</a></li>
+                    <li><a class="nav-link padding" href="#">Stumenti</a></li>
+                    <li><a class="nav-link padding" href="#">Cosa fare/Sicurezza</a></li>
                 </ul>
                 <hr>
             </div>
