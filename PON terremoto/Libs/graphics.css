@@ -98,6 +98,8 @@ body {
     font-size: 16pt;
 }
 
-/*barra laterale*/
-
+/*distanza bottoni barra in altro*/
+.padding{
+    padding: 0px 5px;
+}
 /*fine*/
