@@ -118,7 +118,7 @@ a.nav-link {
 .titolo-pagina {
     padding-top: 15px;
     text-align:center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     
 }
@@ -127,12 +127,11 @@ a.nav-link {
     padding-left: 5x;
     text-align: left;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .testo-paragrafo {
     padding: 10px 30px 20px 30px;
-
     text-align: justify;
 }
 /*barra laterale*/
