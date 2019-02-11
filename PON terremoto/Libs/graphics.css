@@ -66,9 +66,9 @@ body {
     border-color: grey;
 }
 
-a {
+.footer a {
     list-style-type: none;
-    color: #ff495f;
+    color: #7dc3ff;
 }
 
 .footer a:hover {
