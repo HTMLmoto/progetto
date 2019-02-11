@@ -78,6 +78,7 @@ body {
 #pon {
     margin: 10px 0px;
     object-fit: contain;
+    object-position: right;
 }
 
 .martop {
