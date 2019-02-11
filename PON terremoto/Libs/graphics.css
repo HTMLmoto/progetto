@@ -66,6 +66,11 @@ body {
     border-color: grey;
 }
 
+.footer a {
+    list-style-type: none;
+    color: #ff495f;
+}
+
 a {
     list-style-type: none;
     color: #ff495f;
