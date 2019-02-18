@@ -156,6 +156,18 @@ a.nav-link {
     color: #a24d55;
 }
 
+.btn-link {
+    transition: 0.2s;
+}
+
+.btn-link:active {
+    transform: scale(0.95);
+}
+
+.collapse {
+    
+}
+
 /*barra laterale*/
 
 /*fine*/
