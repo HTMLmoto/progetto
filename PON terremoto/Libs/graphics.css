@@ -157,6 +157,7 @@ a.nav-link {
 }
 
 .btn-link {
+    transform-origin: left;
     transition: 0.2s;
 }
 
