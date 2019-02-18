@@ -128,7 +128,6 @@ a.nav-link {
     text-align:center;
     font-size: 50px;
     font-weight: bold;
-    
 }
 
 .titolo-paragrafo {
@@ -142,6 +141,16 @@ a.nav-link {
     padding: 10px 30px 20px 30px;
     text-align: justify;
 }
+
+.link-danger, .btn-link:not(.blue) {
+    color: #dc3545;
+}
+
+.link-danger:not(.blue):hover, .link-danger:not(.blue):focus, .btn-link:not(.blue):hover, .btn-link:not(.blue):focus {
+    text-decoration: none;
+    color: #a24d55;
+}
+
 /*barra laterale*/
 
 /*fine*/
