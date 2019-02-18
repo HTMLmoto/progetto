@@ -168,6 +168,13 @@ a.nav-link {
     
 }
 
+.card-header h2 button {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+}
+
 /*barra laterale*/
 
 /*fine*/
