@@ -68,7 +68,12 @@ body {
 
 .footer a {
     list-style-type: none;
-    color: #7dc3ff;
+    color: #ff495f;
+}
+
+a {
+    list-style-type: none;
+    color: #ff495f;
 }
 
 .footer a:hover {
