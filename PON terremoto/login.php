@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Titolo sito PON</title>
+        <script src="Libs/js/jquery-2.2.3.js"></script>
+        <script src="Libs/js/popper.js"></script>
+        <script src="Libs/js/bootstrap.js"></script>
+		<script src="Libs/js/my-project.js"></script>
+        <link rel="stylesheet" href="Libs/css/css/font-awesome.css">
+        <link rel="stylesheet" href="Libs/css/bootstrap.css">
+        <link rel="stylesheet" href="Libs/graphics.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-danger" align="center">Login - ITT Terremoti</h1>
+            <?php
+                /* esegui se compilato */
+                if (isset($_POST['emailInput'])) {
+                    $email = $_POST['emailInput'];
+                    $password = md5($_POST['passwordInput']);
+                    $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
+                    $sql = $conn->query("select email, password from utenti where email = '$email' and password = '$password'");
+                    if ($sql->num_rows > 0) {
+                        echo 'loggato';
+                    } else {
+                        ?>
+                        <div class="alert alert-danger"><i class="fa fa-ban"></i> Hai sbagliato la password o il nome utente</div>
+                        <?php
+                    }
+                }
+            ?>
+            <form action="login.php" method="post">
+                <br>
+                <i class="fa fa-envelope-open text-secondary fa-fw"></i> Indirizzo email
+                <input class="form-control" type="email" name="emailInput" placeholder="Indirizzo email" required>
+                <br>
+                <i class="fa fa-lock text-secondary fa-fw"></i> Password
+                <input class="form-control" type="password" name="passwordInput" placeholder="Inserisci password" required>
+                <br>
+                <button class="btn btn-danger"><i class="fa fa-sign-in"></i> Entra</button>
+            </form>
+        </div>
+    </body>
+</html>
