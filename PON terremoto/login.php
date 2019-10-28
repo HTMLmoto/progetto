@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['id'])) {
+    header('location: index.php');
+}
+?>
 <html>
     <head>
         <title>Titolo sito PON</title>
@@ -13,21 +19,25 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-danger" align="center">Login - ITT Terremoti</h1>
+            <h1 class="text-danger" align="center"><br>
+                <img src="img/logoITT.png" height="55" class="d-inline-block align-top" alt="">
+                Login - ITT Terremoti
+                </h1>
             <?php
                 /* esegui se compilato */
                 if (isset($_POST['emailInput'])) {
                     $email = $_POST['emailInput'];
                     $password = md5($_POST['passwordInput']);
                     $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
-                    $sql = $conn->query("select email, password from utenti where email = '$email' and password = '$password'");
+                    $sql = $conn->query("select * from utenti where email = '$email' and password = '$password'");
                     if ($sql->num_rows > 0) {
-                        echo 'loggato';
+                        // crea la sessione
+                        $_SESSION['id'] = mysqli_fetch_array($sql)['id'];
+                        header('location: index.php');
                     } else {
-                        ?>
+                        session_destroy(); ?>
                         <div class="alert alert-danger"><i class="fa fa-ban"></i> Hai sbagliato la password o il nome utente</div>
-                        <?php
-                    }
+                    <?php }
                 }
             ?>
             <form action="login.php" method="post">
