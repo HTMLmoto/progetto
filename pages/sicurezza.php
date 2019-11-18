@@ -5,7 +5,7 @@ session_start();
 
 <head>
     <title>Sicurezza</title>
-        <link rel="shortcut icon" href="img/logoITT.png" type="image/png">
+    <link rel="shortcut icon" href="../img/logoITT.png" type="image/png">
     <script src="../Libs/js/jquery-2.2.3.js"></script>
     <script src="../Libs/js/popper.js"></script>
     <script src="../Libs/js/bootstrap.js"></script>

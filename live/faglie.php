@@ -4,7 +4,7 @@ session_start();
 <html>
     <head>
         <title>Titolo sito PON</title>
-        <link rel="shortcut icon" href="img/logoITT.png" type="image/png">
+        <link rel="shortcut icon" href="../img/logoITT.png" type="image/png">
         <!--Librerie-->
         <script src="../Libs/js/jquery-2.2.3.js"></script>
         <script src="../Libs/js/popper.js"></script>
