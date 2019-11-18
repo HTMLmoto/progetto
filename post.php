@@ -23,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/terremoti.html">Terremoti</a>
+                        <a class="nav-link" href="../pages/terremoti.php">Terremoti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/zone.html">Zone</a>
+                        <a class="nav-link" href="../pages/zone.php">Zone</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/faqs.html">FAQs</a>
+                        <a class="nav-link" href="pages/faqs.php">FAQs</a>
                     </li>
                 </ul>
             </div>
@@ -38,8 +38,8 @@
         <div align="center">
             <br>
             <div class="btn-group">
-                <a href="live/terremoti.html" class="btn btn-danger"><i class="fa fa-play"></i> Live terremoti</a>
-                <a href="live/faglie.html" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
+                <a href="live/terremoti.php" class="btn btn-danger"><i class="fa fa-play"></i> Live terremoti</a>
+                <a href="live/faglie.php" class="btn btn-danger"><i class="fa fa-play"></i> Live faglie</a>
             </div>
             <br>
             <br>
@@ -58,19 +58,17 @@
             </div>
         </div>
         <br><br>
-        <div class="row bg-dark text-light footer">
-            <!--
-                91ff94
-                e8cf60
-                c17be8
-                94b2c3
-                ff9477
-            -->
-            <div class="col-md-6 martop">
-                <h4>Creato con <i style="transform: scale(2); margin: 0 10;" class="fa fa-heart text-danger"></i> dagli <a href="#" class="link-danger">studenti</a> dell'<a class="link-danger" target="_blank" href="http://www.ittterni.gov.it">ITT Terni</a>.</h4>
-            </div>
-            <div class="col-md-6">
-                <img id="pon" src="img/logo_pon.png" width="100%" height="200">
+        <!-- footer -->
+        <div class="bg-black text-light footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 martop">
+                        <h4>Creato con <i style="transform: scale(2); margin: 0 10;" class="fa fa-heart text-danger"></i> dagli <span class="pop link-danger" data-toggle="popover">studenti</span> dell'<a class="link-danger" target="_blank" href="http://www.ittterni.gov.it">ITT Terni</a>.</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <img id="pon" src="img/logo_pon.png" width="100%" height="200">
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -15,15 +15,6 @@ body {
     height: 300px;
 }
 
-.live-title {
-    font-size: 25px;
-    padding-left: 30px;
-}
-
-.live-card {
-    border-radius: 10px;
-}
-
 .background {
     background-image: url(../img/earthquake-1790920_640.jpg);
     background-repeat: no-repeat;
