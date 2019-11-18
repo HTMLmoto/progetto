@@ -32,17 +32,17 @@ session_start();
                             Terremoti
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="terremoti.php">Definizioni sui terremoti</a>
+                            <a class="dropdown-item" href="../pages/terremoti.php">Definizioni sui terremoti</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="terremoti_nel_mondo.php">Nel mondo</a>
-                            <a class="dropdown-item" href="terremoti_in_italia.php">In Italia</a>
+                            <a class="dropdown-item" href="../pages/terremoti_nel_mondo.php">Nel mondo</a>
+                            <a class="dropdown-item" href="../pages/terremoti_in_italia.php">In Italia</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sicurezza.php">Sicurezza</a>
+                        <a class="nav-link" href="../pages/sicurezza.php">Sicurezza</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faqs.php">FAQs</a>
+                        <a class="nav-link" href="../pages/faqs.php">FAQs</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" method="get" action="../search.php">
