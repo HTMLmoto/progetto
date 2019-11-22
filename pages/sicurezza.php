@@ -209,10 +209,8 @@ session_start();
                     </div>
                 </div>
             </div>
-
-
-
           </div>
+          <br>
           <h2>Sicurezza a scuola</h2>
           <div class="accordion" id="accordionExample2">
               <div class="card">
