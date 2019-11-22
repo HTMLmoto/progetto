@@ -214,7 +214,7 @@ session_start();
 
           </div>
           <h2>Sicurezza a scuola</h2>
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordionExample2">
               <div class="card">
                   <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
@@ -223,7 +223,7 @@ session_start();
                           </button>
                       </h2>
                   </div>
-                  <div id="c5" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="c5" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample2">
                       <div class="card-body testo-paragrafo">
                         Il documento di valutazione dei rischi deve essere predisposto in ogni istituto ad opera del dirigente scolastico in collaborazione con
                           il responsabile del servizio di prevenzione e protezione con il medico competente.
@@ -239,7 +239,7 @@ session_start();
                           </button>
                       </h2>
                   </div>
-                  <div id="c6" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="c6" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample2">
                       <div class="card-body testo-paragrafo">
                         Il piano di emergenza è contenuto nel documento  di valutazione dei rischi ed è uno strumento
                         operativo che deve essere predisposto in ogni scuola ad opera del Dirigente Scolastico.È obbligatorio  e ha lo scopo di informare tutto il personale docente e
@@ -260,7 +260,7 @@ session_start();
                           </button>
                       </h2>
                   </div>
-                  <div id="c7" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="c7" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample2">
                       <div class="card-body testo-paragrafo">
                         Il piano di emergenza definisce i compiti da svolgere in funzione delle varie ipotesi diemergenza. Nel corso delle prove di evacuazione,
                         “da effettuare almeno due volte durante l’anno scolastico” , deve essere verificata la “funzionalità del piano alfine di apportare gli
@@ -278,7 +278,7 @@ session_start();
                           </button>
                       </h2>
                   </div>
-                  <div id="c8" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="c8" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample2">
                       <div class="card-body testo-paragrafo">
 
                         La competenza degli interventi di manutenzione straordinaria ed ordinaria in materia di edilizia scolastica è dell’ente locale, proprietario degli immobili. Costituiscono precisi
@@ -298,7 +298,7 @@ session_start();
                           </button>
                       </h2>
                   </div>
-                  <div id="c9" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="c9" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample2">
                       <div class="card-body testo-paragrafo">
                         Il diritto di accesso ai documenti amministrativi (Legge n. 241 del 1990 e
                         sucessive modifiche) è un diritto riconosciuto al cittadino in funzione dei rapporti con lo Stato e la Pubblica amministrazione, al fine, in particolare di garantire la trasparenza di quest’ultima. Titolari del diritto di accesso sono tutti i soggetti interessati, e cioè i privati, anche portatori di interessi diffusi che abbiano un interesse diretto, concreto e attuale
