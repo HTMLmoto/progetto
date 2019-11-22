@@ -35,7 +35,7 @@ session_start();
                             Terremoti
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="terremoti.php">Definizioni sui terremoti</a>
+                            <a class="dropdown-item" href="terremoti.php">Informazioni sui terremoti</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="terremoti_in_italia.php">In Italia</a>
                             <a class="dropdown-item" href="terremoti_nel_mondo.php">Nel mondo</a>
