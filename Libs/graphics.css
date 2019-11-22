@@ -24,6 +24,18 @@ body {
     border-radius: 10px;
 }
 
+.post {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
 .card {
     border-radius: 10px;
     overflow: hidden;
@@ -34,7 +46,6 @@ body {
 }
 
 .card .card-header h2 button {
-    color: black !important;
     font-weight: bold;
 }
 

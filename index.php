@@ -178,7 +178,7 @@ session_start();
                 $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                 $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
                 while ($post = mysqli_fetch_array($postsSql)) { ?>
-                    <div class="alert alert-dark shadow" align="center">
+                    <div class="alert alert-dark shadow post" align="center">
                         <h3><?php echo $post['titolo']; ?></h3>
                         <small>Creato da <?php echo $post['nickname']; ?></small>
                         <hr>
