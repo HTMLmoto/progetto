@@ -14,13 +14,6 @@ session_start();
         <link rel="stylesheet" href="Libs/graphics.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <script>
-            $(document).ready(function() {
-                $('.carousel').carousel({
-                  interval: 4000
-                });
-            });
-        </script>
     </head>
     <body>
         <div class="background"></div>
