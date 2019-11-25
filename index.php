@@ -149,7 +149,7 @@ session_start();
                                     <i class="fa fa-pencil text-danger"></i>&nbsp;
                                 </div>
                                 <div class="col-sm" align="right">
-                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostForm"><i class="fa fa-plus"></i> Crea un post</button>
+                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostFrm"><i class="fa fa-plus"></i> Crea un post</button>
                                 </div>
                             </div>
                         </div>
