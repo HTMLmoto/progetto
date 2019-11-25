@@ -3,6 +3,7 @@ session_start();
 if (isset($_SESSION['id'])) {
     header('location: index.php');
 }
+include('settings.php');
 ?>
 <html>
     <head>
@@ -28,7 +29,6 @@ if (isset($_SESSION['id'])) {
                 if (isset($_POST['emailInput'])) {
                     $email = $_POST['emailInput'];
                     $password = md5($_POST['passwordInput']);
-                    $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                     $sql = $conn->query("select * from utenti where email = '$email' and password = '$password'");
                     if ($sql->num_rows > 0) {
                         // crea la sessione

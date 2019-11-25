@@ -50,7 +50,6 @@ session_start();
                 </ul>
                 <form class="form-inline my-2 my-lg-0" method="get" action="../search.php">
                     <?php if (isset($_SESSION['id'])) {
-                        $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                         $nickname = mysqli_fetch_array($conn->query("SELECT nickname from utenti where id = ".$_SESSION['id']))['nickname']; ?>
                         <div class="dropdown">
                             <button class="btn btn-danger mr-sm-2 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $nickname; ?></button>

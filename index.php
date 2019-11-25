@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('settings.php');
 ?>
 <html>
     <head>
@@ -48,7 +49,6 @@ session_start();
                 </ul>
                 <form class="form-inline my-2 my-lg-0" method="get" action="search.php">
                     <?php if (isset($_SESSION['id'])) {
-                        $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                         $nickname = mysqli_fetch_array($conn->query("SELECT nickname from utenti where id = ".$_SESSION['id']))['nickname']; ?>
                         <div class="dropdown">
                             <button class="btn btn-danger mr-sm-2 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $nickname; ?></button>
@@ -125,7 +125,6 @@ session_start();
             </div>
             <br>
             <?php if (isset($_SESSION['id'])) {
-                    $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                     /* esegui se compilato */
                     if (isset($_POST['titoloPost'])) {
                         $titolo = addslashes($_POST['titoloPost']);
@@ -170,7 +169,6 @@ session_start();
                 <h1 align="center" class="text-danger">Post recenti</h1>
                 <br>
                 <?php
-                    $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
                     $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
                     while ($post = mysqli_fetch_array($postsSql)) { ?>
                         <div class="alert alert-light text-dark shadow post" align="center">

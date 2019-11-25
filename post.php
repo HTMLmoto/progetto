@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    if (isset($_SESSION['id'])) {
+        include('settings.php'); ?>
 <html>
     <head>
         <title>Titolo sito PON</title>
@@ -73,3 +77,4 @@
         </div>
     </body>
 </html>
+<?php } ?>
