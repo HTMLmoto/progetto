@@ -78,6 +78,11 @@ body {
     width: 240px;
     height: 40px;
 }
+#carouselExampleIndicators {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
 
 .button {
   background-color: lightblue;
