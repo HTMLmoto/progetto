@@ -156,7 +156,7 @@ session_start();
                                 <textarea class="form-control" name="contenutoPost" rows="5" placeholder="Contenuto post" required></textarea>
                                 <br>
                                 <div align="right">
-                                    <button type="submit" class="btn btn-danger"><i class="fa fa-pencil"></i> Crea</button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-send"></i> Pubblica</button>
                                     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#creaPostButton"><i class="fa fa-close"></i> Annulla</button>
                                 </div>
                             </form>
@@ -166,21 +166,24 @@ session_start();
                 </div>
             <?php } ?>
             <hr>
-            <h1 align="center">Post recenti</h1>
-            <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
-                $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
-                while ($post = mysqli_fetch_array($postsSql)) { ?>
-                    <div class="alert alert-dark shadow post" align="center">
-                        <h3><?php echo $post['titolo']; ?></h3>
-                        <small>Creato da <?php echo $post['nickname']; ?></small>
-                        <hr>
-                        <p><i class="fa fa-calendar"></i> <?php echo $post['data']; ?></p>
-                        <p>
-                            <?php echo $post['contenuto']; ?>
-                        </p>
-                    </div>
-            <?php } ?>
+            <div class="posts">
+                <h1 align="center" class="text-danger">Post recenti</h1>
+                <br>
+                <?php
+                    $conn = mysqli_connect('localhost', 'root', '', 'sitoterremoti');
+                    $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
+                    while ($post = mysqli_fetch_array($postsSql)) { ?>
+                        <div class="alert alert-light text-dark shadow post" align="center">
+                            <h3 class="text-dark"><?php echo $post['titolo']; ?></h3>
+                            <small>Creato da <?php echo $post['nickname']; ?></small>
+                            <hr>
+                            <p><i class="fa fa-calendar"></i> <?php echo $post['data']; ?></p>
+                            <p>
+                                <?php echo $post['contenuto']; ?>
+                            </p>
+                        </div>
+                <?php } ?>
+            </div>
             <br>
         </div>
         <div class="bg-black text-light footer">
