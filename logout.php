@@ -2,6 +2,7 @@
     session_start();
     session_destroy();
     header('location: index.php');
+include('settings.php');
 ?>
 
         <!-- host arcanam.mediarama.com -->
