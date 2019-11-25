@@ -142,7 +142,7 @@ session_start();
                                     <i class="fa fa-pencil text-danger"></i>&nbsp;
                                 </div>
                                 <div class="col-sm" align="right">
-                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostFrm"><i class="fa fa-plus"></i> Crea un post</button>
+                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostForm"><i class="fa fa-plus"></i> Crea un post</button>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ session_start();
                                 <textarea class="form-control" name="contenutoPost" rows="5" placeholder="Contenuto post" required></textarea>
                                 <br>
                                 <div align="right">
-                                    <button type="submit" class="btn btn-danger"><i class="fa fa-send"></i> Crea</button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-pencil"></i> Crea</button>
                                     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#creaPostButton"><i class="fa fa-close"></i> Annulla</button>
                                 </div>
                             </form>
