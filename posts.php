@@ -46,6 +46,9 @@ include('settings.php');
                     <li class="nav-item">
                         <a class="nav-link" href="pages/faqs.php">FAQs</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="posts.php">I nostri post</a>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" method="get" action="search.php">
                     <?php if (isset($_SESSION['id'])) {
