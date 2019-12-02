@@ -96,7 +96,7 @@ include('settings.php');
                         $conn->query("insert into posts (titolo, contenuto, pubblico, idUser) values ('$titolo', '$contenuto', 1, ".$_SESSION['id'].")");
                     } else {
                         $conn->query("insert into posts (titolo, contenuto, pubblico, idUser) values ('$titolo', '$contenuto', 0, null)");
-                        echo '<div class="alert alert-warning"><i class="fa fa-globe"></i> Il tuo post verra pubblicato dopo la revisione di un amministratore del sito.</div>';
+                        echo '<div class="alert alert-warning"><i class="fa fa-globe"></i> Il tuo post è stato ricevuto e verra pubblicato dopo la revisione di un amministratore del sito.</div>';
                     }
                 ?>
             <?php }
@@ -117,6 +117,9 @@ include('settings.php');
                         <div class="card-body row">
                             <div class="col-sm live-title" align="left">
                                 <i class="fa fa-pencil text-danger"></i>&nbsp;
+                                <?php if (empty($_SESSION['id'])) {
+                                    echo 'Invia un tuo post';
+                                } ?>
                             </div>
                             <div class="col-sm" align="right">
                                 <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostForm"><i class="fa fa-plus"></i> Crea un post</button>
