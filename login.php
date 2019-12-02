@@ -33,7 +33,7 @@ include('settings.php');
                     if ($sql->num_rows > 0) {
                         // crea la sessione
                         $_SESSION['id'] = mysqli_fetch_array($sql)['id'];
-                        header('location: index.php');
+                        header('location: posts.php');
                     } else {
                         session_destroy(); ?>
                         <div class="alert alert-danger"><i class="fa fa-ban"></i> Hai sbagliato la password o il nome utente</div>

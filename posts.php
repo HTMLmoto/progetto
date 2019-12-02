@@ -85,92 +85,73 @@ include('settings.php');
                 </div>
             </div>
             <br>
-            <div id="carouselExampleIndicators" class="container carousel homepageCarousel slide bg-dark" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/earthquake-1665870.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/earthquake-1665874.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/earthquake-1665878.jpg" alt="3 slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/earthquake-1790918.jpg" alt="4 slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/earthquake-1790920_640.jpg" alt="5 slide">
-                        <!--<div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>-->
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <br>
-            <?php if (isset($_SESSION['id'])) {
+            <?php if (isset($_POST['titoloPost'])) {
+                    $titolo = addslashes($_POST['titoloPost']);
+                    $contenuto = addslashes($_POST['contenutoPost']);
                     /* esegui se compilato */
-                    if (isset($_POST['titoloPost'])) {
-                        $titolo = addslashes($_POST['titoloPost']);
-                        $contenuto = addslashes($_POST['contenutoPost']);
+                    if (isset($_SESSION['id'])) {
                         $conn->query("insert into posts (titolo, contenuto, pubblico, idUser) values ('$titolo', '$contenuto', 1, ".$_SESSION['id'].")");
+                    } else {
+                        $conn->query("insert into posts (titolo, contenuto, pubblico, idUser) values ('$titolo', '$contenuto', 0, null)");
+                        echo '<div class="alert alert-warning"><i class="fa fa-globe"></i> Il tuo post verra pubblicato dopo la revisione di un amministratore del sito.</div>';
                     }
                 ?>
-                <!-- form per creare post -->
-                <div id="creaPostCollapses">
-                    <div class="card">
-                        <div class="collapse show" align="center" id="creaPostButton" data-parent="#creaPostCollapses">
-                            <div class="card-body row">
-                                <div class="col-sm live-title" align="left">
-                                    <i class="fa fa-pencil text-danger"></i>&nbsp;
-                                </div>
-                                <div class="col-sm" align="right">
-                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostForm"><i class="fa fa-plus"></i> Crea un post</button>
-                                </div>
+            <?php }
+            if (isset($_GET['toggle']) && isset($_SESSION['id'])) {
+                $risultato = $conn->query("select pubblico from posts where id = ".$_GET['toggle']);
+                $visiblilita = mysqli_fetch_array($risultato)['pubblico'];
+                if ($visibilita == '1') { // rendi pubblico
+                    
+                } else { // rendi privato
+                    
+                }
+            }
+            ?>
+            <!-- form per creare post -->
+            <div id="creaPostCollapses">
+                <div class="card">
+                    <div class="collapse show" align="center" id="creaPostButton" data-parent="#creaPostCollapses">
+                        <div class="card-body row">
+                            <div class="col-sm live-title" align="left">
+                                <i class="fa fa-pencil text-danger"></i>&nbsp;
+                            </div>
+                            <div class="col-sm" align="right">
+                                <button class="btn btn-danger" data-toggle="collapse" data-target="#creaPostForm"><i class="fa fa-plus"></i> Crea un post</button>
                             </div>
                         </div>
-                        <div class="container collapse hide" id="creaPostForm" data-parent="#creaPostCollapses" align="center">
-                            <br>
-                            <h4 align="left"><i class="fa fa-plus"></i> Crea post</h4>
-                            <hr>
-                            <form action="index.php" method="post">
-                                <input class="form-control" type="text" name="titoloPost" placeholder="Titolo" required>
-                                <br>
-                                <textarea class="form-control" name="contenutoPost" rows="5" placeholder="Contenuto post" required></textarea>
-                                <br>
-                                <div align="right">
-                                    <button type="submit" class="btn btn-danger"><i class="fa fa-send"></i> Pubblica</button>
-                                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#creaPostButton"><i class="fa fa-close"></i> Annulla</button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
-                    <br>
+                    <div class="container collapse hide" id="creaPostForm" data-parent="#creaPostCollapses" align="center">
+                        <br>
+                        <h4 align="left"><i class="fa fa-plus"></i> Crea post</h4>
+                        <hr>
+                        <form action="posts.php" method="post">
+                            <input class="form-control" type="text" name="titoloPost" placeholder="Titolo" required>
+                            <br>
+                            <textarea class="form-control" name="contenutoPost" rows="5" placeholder="Contenuto post" required></textarea>
+                            <br>
+                            <div align="right">
+                                <button type="submit" class="btn btn-danger"><i class="fa fa-send"></i> Pubblica</button>
+                                <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#creaPostButton"><i class="fa fa-close"></i> Annulla</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            <?php } ?>
+                <br>
+            </div>
             <hr>
             <div class="posts">
-                <h1 align="center" class="text-danger">Post recenti</h1>
+                <h3 align="center" class="text-danger">Tutti i post</h3>
                 <br>
                 <?php
-                    $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
+                    if (isset($_SESSION['id'])) {
+                        $postsSql = $conn->query("SELECT * from posts left join utenti on posts.idUser = utenti.id where deleted = 0 order by posts.id desc");
+                    } else {
+                        $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc");
+                    }
                     while ($post = mysqli_fetch_array($postsSql)) { ?>
+                        <?php if ($post['nickname'] == '') {
+                            $post['nickname'] = 'un visitatore';
+                        } ?>
                         <div class="alert alert-light text-dark shadow post" align="center">
                             <h3 class="text-dark"><?php echo $post['titolo']; ?></h3>
                             <small>Creato da <?php echo $post['nickname']; ?></small>
@@ -179,6 +160,13 @@ include('settings.php');
                             <p>
                                 <?php echo $post['contenuto']; ?>
                             </p>
+                            <div align="right"><?php if (isset($_SESSION['id'])) {
+                                if ($post['pubblico'] == '1') { ?>
+                                    <a href="?toggle=<?php echo $post['id']; ?>" class="btn btn-danger"><i class="fa fa-lock"></i> Rendi privato</a>
+                                <?php } else { ?>
+                                    <a href="?toggle=<?php echo $post['id']; ?>" class="btn btn-success"><i class="fa fa-globe"></i> Rendi pubblico</a>
+                                <?php }
+                            } ?></div>
                         </div>
                 <?php } ?>
             </div>
