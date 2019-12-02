@@ -99,11 +99,11 @@ include('settings.php');
             <?php }
             if (isset($_GET['toggle']) && isset($_SESSION['id'])) {
                 $risultato = $conn->query("select pubblico from posts where id = ".$_GET['toggle']);
-                $visiblilita = mysqli_fetch_array($risultato)['pubblico'];
+                $visibilita = mysqli_fetch_array($risultato)['pubblico'];
                 if ($visibilita == '1') { // rendi pubblico
-                    
+                    $conn->query("update posts set pubblico=0 where id=". $_GET['toggle']);
                 } else { // rendi privato
-                    
+                    $conn->query("update posts set pubblico=1 where id=". $_GET['toggle']);
                 }
             }
             ?>
@@ -144,9 +144,9 @@ include('settings.php');
                 <br>
                 <?php
                     if (isset($_SESSION['id'])) {
-                        $postsSql = $conn->query("SELECT * from posts left join utenti on posts.idUser = utenti.id where deleted = 0 order by posts.id desc");
+                        $postsSql = $conn->query("SELECT posts.*, utenti.nickname from posts left join utenti on posts.idUser = utenti.id where deleted = 0 order by posts.id desc");
                     } else {
-                        $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc");
+                        $postsSql = $conn->query("SELECT posts.*, utenti.nickname from posts left join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc");
                     }
                     while ($post = mysqli_fetch_array($postsSql)) { ?>
                         <?php if ($post['nickname'] == '') {

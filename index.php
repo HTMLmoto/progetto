@@ -169,7 +169,7 @@ include('settings.php');
                 <h1 align="center" class="text-danger">Post recenti</h1>
                 <br>
                 <?php
-                    $postsSql = $conn->query("SELECT * from posts inner join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
+                    $postsSql = $conn->query("SELECT * from posts left join utenti on posts.idUser = utenti.id where deleted = 0 and pubblico = 1 order by posts.id desc limit 3");
                     while ($post = mysqli_fetch_array($postsSql)) { ?>
                         <div class="alert alert-light text-dark shadow post" align="center">
                             <h3 class="text-dark"><?php echo $post['titolo']; ?></h3>
