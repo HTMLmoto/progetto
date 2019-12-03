@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('../settings.php');
 ?>
 <html>
     <head>
