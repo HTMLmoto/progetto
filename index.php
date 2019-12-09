@@ -63,8 +63,7 @@ include('settings.php');
                             </div>
                         </div>
                     <?php } ?>
-                    <div class="btn-group input-group my-2">
-                        <input class="form-control" type="search" name="q" placeholder="Cerca">
+                    <div>
                         <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Cerca</button>
                     </div>
                     <?php if (empty($_SESSION['id'])) { ?>
@@ -130,7 +129,7 @@ include('settings.php');
             <?php if (isset($_SESSION['id'])) {
                     /* esegui se compilato */
                     if (isset($_POST['titoloPost'])) {
-                        $titolo = addslashes($_POST['titoloPost']);
+                        $titolo = addsl.ashes($_POST['titoloPost']);
                         $contenuto = addslashes($_POST['contenutoPost']);
                         $conn->query("insert into posts (titolo, contenuto, pubblico, idUser) values ('$titolo', '$contenuto', 1, ".$_SESSION['id'].")");
                     }
