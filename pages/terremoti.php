@@ -64,10 +64,10 @@ include('../settings.php');
                         </div>
                     <?php } ?>
                     <div>
-                        <a href="../segnala.php" class="btn btn-secondary"><i class="fa fa-flag"></i> Segnala un terremoto</a>
+                        <a href="../segnala.php" class="btn btn-secondary">hai<b>sentito</b>il<b>terremoto</b></a>
                     </div>
                     <?php if (empty($_SESSION['id'])) { ?>
-                        <a class="btn btn-danger ml-sm-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
+                        <a class="btn btn-danger ml-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
                     <?php } ?>
                 </form>
             </div>
@@ -129,6 +129,16 @@ include('../settings.php');
                     </div>
                     <div class="testo-paragrafo">
                         E’ il punto della superficie terrestre situato precisamente sulla verticale passante per l’ipocentro, dove abbiamo le scosse di intensità maggiore.
+                    </div>
+                    <div class="titolo-paragrafo">
+                        Le onde sismiche
+                    </div>
+                    <div class="testo-paragrafo">                             
+                        Quando c'è un terremoto possiamo percepire dei movimenti che muovono la terra, questi movimenti sono chiamati "Onde Sismiche". Le onde sismiche sono un accumulo di energia che viene sprigionata mediante un terremoto e queste partono, infatti, dall'ipocentro per poi propagarsi in tutte le direzioni. Possiamo distinguere 2 tipi di onde:
+                        <ol>
+                            <li>Onde P(primarie), oppure Onde Longitudinali: sono onde che "comprimono" e "dilatano" la terra deformandone il volume; sono le più veloci e dunque le prime ad essere avvertite.</li>
+                            <li>Onde S (secondarie), oppure Onde Trasversali: sono onde che si "dilatano" ma non deformano il volume; sono più lente delle onde P e sono quelle che causano più danni.</li>
+                        </ol>
                     </div>
                 </div>
                 </div>

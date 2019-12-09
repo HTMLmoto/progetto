@@ -66,10 +66,10 @@ include('../settings.php');
                         </div>
                     <?php } ?>
                     <div>
-                        <a href="../segnala.php" class="btn btn-secondary"><i class="fa fa-flag"></i> Segnala un terremoto</a>
+                        <a href="../segnala.php" class="btn btn-secondary">hai<b>sentito</b>il<b>terremoto</b></a>
                     </div>
                     <?php if (empty($_SESSION['id'])) { ?>
-                        <a class="btn btn-danger ml-sm-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
+                        <a class="btn btn-danger ml-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
                     <?php } ?>
                 </form>
             </div>

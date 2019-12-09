@@ -53,7 +53,7 @@ include('../settings.php');
                     <?php if (isset($_SESSION['id'])) {
                         $nickname = mysqli_fetch_array($conn->query("SELECT nickname from utenti where id = ".$_SESSION['id']))['nickname']; ?>
                         <div class="dropdown">
-                            <button class="btn btn-danger mr-sm-2 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $nickname; ?></button>
+                            <button class="btn btn-danger mr-2 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $nickname; ?></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-header">
                                     Profilo
@@ -62,12 +62,11 @@ include('../settings.php');
                             </div>
                         </div>
                     <?php } ?>
-                    <div class="btn-group input-group my-2">
-                        <input class="form-control" type="search" name="q" placeholder="Cerca">
-                        <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Cerca</button>
+                    <div>
+                        <a href="../segnala.php" class="btn btn-secondary">hai<b>sentito</b>il<b>terremoto</b></a>
                     </div>
                     <?php if (empty($_SESSION['id'])) { ?>
-                        <a class="btn btn-danger ml-sm-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
+                        <a class="btn btn-danger ml-2" href="../login.php"><i class="fa fa-sign-in"></i> Login</a>
                     <?php } ?>
                 </form>
             </div>
