@@ -26,10 +26,10 @@ include('settings.php');
                 </h1>
             <?php
                 /* esegui se compilato */
-                if (isset($_POST['emailInput'])) {
-                    $email = $_POST['emailInput'];
+                if (isset($_POST['nicknameInput'])) {
+                    $nickname = $_POST['nicknameInput'];
                     $password = md5($_POST['passwordInput']);
-                    $sql = $conn->query("select * from utenti where email = '$email' and password = '$password'");
+                    $sql = $conn->query("select * from utenti where nickname = '$nickname' and password = '$password'");
                     if ($sql->num_rows > 0) {
                         // crea la sessione
                         $_SESSION['id'] = mysqli_fetch_array($sql)['id'];
@@ -42,8 +42,8 @@ include('settings.php');
             ?>
             <form action="login.php" method="post">
                 <br>
-                <i class="fa fa-envelope-open text-secondary fa-fw"></i> Indirizzo email
-                <input class="form-control" type="email" name="emailInput" placeholder="Indirizzo email" required>
+                <i class="fa fa-envelope-open text-secondary fa-fw"></i> Il tuo nickname
+                <input class="form-control" type="text" name="nicknameInput" placeholder="Il tuo nickname" required>
                 <br>
                 <i class="fa fa-lock text-secondary fa-fw"></i> Password
                 <input class="form-control" type="password" name="passwordInput" placeholder="Inserisci password" required>

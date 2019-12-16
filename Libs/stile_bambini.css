@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: default;
+    font-family: 'Indie Flower', cursive;
 }
 
 #menu-container{
@@ -24,39 +25,6 @@ body {
     border-radius: 10px;
 }
 
-.post {
-    border-radius: 10px;
-}
-
-.btn {
-    border-radius: 10px;
-}
-
-.colore_navbar,
-.bg-azzurro {
-    background-color: #2B55CC !important;
-}
-
-.text-azzurro {
-    color: #658dff !important;
-}
-.form-control {
-    border-radius: 10px;
-}
-
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card .card-header {
-    border: none;
-}
-
-.card .card-header h2 button {
-    font-weight: bold;
-}
-
 .background {
     background-image: url(../img/earthquake-1790920_640.jpg);
     background-repeat: no-repeat;
@@ -72,10 +40,6 @@ body {
     z-index: -2;
 }
 
-nav.navbar {
-    border-radius: 0px 0px 10px 10px;
-}
-
 .voce-menu {
     background-color: lightblue;
   border: none;
@@ -85,16 +49,11 @@ nav.navbar {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: auto; 
+  margin-top: auto;
   font-style: oblique;
     width: 240px;
     height: 40px;
 }
-#carouselExampleIndicators {
-    border-radius: 10px !important;
-    overflow: hidden;
-}
-
 
 .button {
   background-color: lightblue;
@@ -105,14 +64,12 @@ nav.navbar {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: auto; 
+  margin-top: auto;
   font-style: oblique;
     width: 240px;
     height: 40px;
-    
+
 }
-
-
 
 
 .footer hr {
@@ -145,7 +102,7 @@ a {
 
 .live {
     width: 100vw;
-    height: calc(100vh - 198px);
+    height: calc(100vh - 156px);
     border: none;
 }
 
@@ -161,13 +118,19 @@ a {
     object-fit: contain;
 }
 
-img {
-    border-radius: 10px;
-}
-
 .bg-black {
     background-color: black !important;
 }
+
+.colore_navbar,
+.bg-azzurro {
+    background-color: #2B55CC !important;
+}
+
+.text-azzurro {
+    color: #2B55CC !important;
+}
+
 
 .carousel-inner img {
     width: 100%;
@@ -223,7 +186,7 @@ img {
 }
 
 .collapse {
-    
+
 }
 
 .card-header h2 button {
@@ -247,6 +210,34 @@ img {
 	.my-popover-body{
 		width:250px;
 	}
+}
+.banner{background: #fff; height:30%;margin-top:40px}
+.banner__image{width:50%; float:left;height:100%;
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/10/12/29/earthquake-1968985_960_720.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+}
+.banner__image2{width:50%; float:left;height:100%;
+  background-image: url(../img/Pon.gif);
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+}
+.banner__copy{
+  width:50%; float:left;height:100%;display: table;
+}
+.banner__copy__text{
+  display: table-cell; vertical-align: middle;padding:30px;
+}
+
+.banner__copy__text h3{
+  font-size: 36px;margin-bottom:0;
+}
+.banner__copy__text h4{
+  font-size: 22px;margin: 5px 0
 }
 
 /*barra laterale*/
