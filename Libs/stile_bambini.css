@@ -213,7 +213,7 @@ a {
 }
 .banner{background: #fff; height:30%;margin-top:40px}
 .banner__image{width:50%; float:left;height:100%;
-  background-image: url("https://cdn.pixabay.com/photo/2017/01/10/12/29/earthquake-1968985_960_720.jpg");
+  background-image: url("../img/casettaGif.gif");
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
